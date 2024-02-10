@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Preview Card Component Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Main Container -->
+    <main
+      class="w-[350px] h-max p-5 overflow-hidden bg-card m-auto mt-10 rounded-xl"
+    >
+      <!-- Image section -->
+      <section
+        class="w-full rounded-lg overflow-hidden hover:cursor-pointer relative hover-show-bg"
+      >
+        <!-- Background image -->
+        <img
+          src="./assets/icon-view.svg"
+          alt="view-icon"
+          class="w-full m-auto absolute left-0 right-0 bg-teal-400 hidden hover:block hover:opacity-50"
+        />
+        <!-- Main image -->
+        <img
+          src="./assets/image-equilibrium.jpg"
+          alt="equilibruim-img"
+          class="w-full"
+        />
+      </section>
+      <!-- Text content section -->
+      <section class="">
+        <h1 class="text-white text-xl py-3 font-bold">Equilibrium #3429</h1>
+        <p class="py-1 text-xl">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <!--Stats section  -->
+        <article class="flex items-center justify-between py-2">
+          <div class="flex items-center gap-2">
+            <!-- Icon -->
+            <img src="./assets/icon-ethereum.svg" alt="etherreum-icon" />
+            <!-- Text -->
+            <span class="cyan-text font-bold"> 0.041 ETH </span>
+          </div>
+          <div class="flex items-center gap-2">
+            <!-- Icon -->
+            <img src="./assets/icon-clock.svg" />
+            <!-- Text -->
+            <span class="gray-color font-bold">3 days left</span>
+          </div>
+        </article>
+      </section>
+      <!-- Author footer -->
+      <section
+        class="border-t-2 border-t-gray-700 mt-5 py-2 flex items-center gap-3"
+      >
+        <!-- Avatar section -->
+        <img
+          src="./assets/image-avatar.png"
+          alt="avatar"
+          class="w-12 border-2 rounded-full"
+        />
+        <!-- Text section -->
+        <span class="gray-color text-lg">
+          Creation of <span class="text-white">Jules Wyvern</span>
+        </span>
+      </section>
+    </main>
+  </body>
+</html>
